@@ -1,0 +1,109 @@
+
+/* Device Menu
+
+PopupMenu.PopupMenuSection.cyclopconnect-device-section
+    PopupMenu.PopupMenuSection.gsconnect-device-menu
+        PopupMenu.PopupSeparatorMenuItem
+            StLabel.cyclopconnect-device-name
+            StBoxLayout.cyclopconnect-device-battery
+        PopupMenu.PopupMenuSection
+            StBoxLayout.cyclopconnect-list-box
+            StBoxLayout (Submenu Container)
+*/
+.cyclopconnect-device-section {
+}
+
+/* Title Bar */
+.cyclopconnect-device-name {
+    font-weight: bold;
+}
+
+.cyclopconnect-device-menu .popup-separator-menu-item {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Battery Widget */
+.cyclopconnect-device-battery {
+    spacing: 3px;
+}
+
+.cyclopconnect-device-battery StLabel {
+    font-size: 0.75em;
+}
+
+.cyclopconnect-device-battery StIcon {
+    icon-size: 16px;
+}
+
+/* List Box */
+.cyclopconnect-list-box {
+}
+
+
+/* Device Panel Indicator
+
+PanelMenu.Button.cyclopconnect-device-indicator
+    PopupMenu.PopupMenu
+        PopupMenu.PopupMenuSection.cyclopconnect-device-menu
+            PopupMenu.PopupSeparatorMenuItem
+                StLabel.cyclopconnect-device-name
+                StBoxLayout.cyclopconnect-device-battery
+            PopupMenu.PopupMenuSection
+                StBoxLayout.cyclopconnect-icon-box
+                StBoxLayout (Submenu Container)
+ */
+.cyclopconnect-device-indicator {
+    -st-icon-style: symbolic;
+}
+
+/* Icon Box */
+.cyclopconnect-icon-box {
+    margin: 0em 2em 0.5em;
+    spacing: 6px;
+}
+
+.cyclopconnect-icon-button {
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.cyclopconnect-icon-button:hover, .cyclopconnect-icon-button:focus {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+.cyclopconnect-icon-button StIcon {
+    icon-size: 1em;
+}
+
+
+/* Tooltip
+
+StBin.cyclopconnect-tooltip (inherits from .osd-window)
+    StBoxLayout || [ Custom ClutterActor ]
+        StIcon
+        StLabel
+*/
+.cyclopconnect-tooltip {
+    border-radius: 3px;
+    min-width: 0;
+    min-height: 0;
+    padding: 6px;
+}
+
+.cyclopconnect-tooltip > StBoxLayout {
+    spacing: 6px;
+}
+
+.cyclopconnect-tooltip StIcon {
+    icon-size: 16px;
+}
+
+.cyclopconnect-tooltip StLabel {
+    font-weight: normal;
+    text-align: left;
+}
+
+.cyclopconnect-tooltip StLabel:rtl {
+    text-align: right;
+}
